@@ -1,0 +1,43 @@
+{
+  "laptops": [
+    {
+      "id": "1",
+      "name": "HP Pavilion Gaming",
+      "price": 58990,
+      "processor": "AMD Ryzen 5",
+      "ram": "8GB",
+      "storage": "512GB SSD",
+      "display": "15.6 inch FHD",
+      "graphics": "NVIDIA GTX 1650",
+      "rating": 4.3,
+      "reviews": 1250,
+      "category": "Gaming Laptop"
+    },
+    {
+      "id": "2",
+      "name": "Lenovo IdeaPad Slim 3",
+      "price": 35990,
+      "processor": "Intel i3 11th Gen",
+      "ram": "8GB",
+      "storage": "256GB SSD",
+      "display": "15.6 inch FHD",
+      "graphics": "Intel UHD",
+      "rating": 4.1,
+      "reviews": 2100,
+      "category": "Student Laptop"
+    },
+    {
+      "id": "3",
+      "name": "Dell XPS 13",
+      "price": 129990,
+      "processor": "Intel i7 12th Gen",
+      "ram": "16GB",
+      "storage": "1TB SSD",
+      "display": "13.3 inch 4K",
+      "graphics": "Intel Iris Xe",
+      "rating": 4.6,
+      "reviews": 850,
+      "category": "Premium Laptop"
+    }
+  ]
+}

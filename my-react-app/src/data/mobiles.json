@@ -1,0 +1,46 @@
+{
+  "mobiles": [
+    {
+      "id": "1",
+      "name": "Samsung Galaxy S21",
+      "price": 54999,
+      "processor": "Exynos 2100",
+      "ram": "8GB",
+      "storage": "128GB",
+      "display": "6.2 inch AMOLED",
+      "camera": "64MP Triple Camera",
+      "battery": "4000mAh",
+      "rating": 4.5,
+      "reviews": 3200,
+      "category": "Premium Smartphone"
+    },
+    {
+      "id": "2",
+      "name": "Redmi Note 11",
+      "price": 15999,
+      "processor": "Snapdragon 680",
+      "ram": "6GB",
+      "storage": "64GB",
+      "display": "6.43 inch AMOLED",
+      "camera": "50MP Quad Camera",
+      "battery": "5000mAh",
+      "rating": 4.2,
+      "reviews": 5600,
+      "category": "Budget Smartphone"
+    },
+    {
+      "id": "3",
+      "name": "iPhone 13",
+      "price": 69900,
+      "processor": "A15 Bionic",
+      "ram": "4GB",
+      "storage": "128GB",
+      "display": "6.1 inch Super Retina XDR",
+      "camera": "12MP Dual Camera",
+      "battery": "3240mAh",
+      "rating": 4.7,
+      "reviews": 2800,
+      "category": "Premium Smartphone"
+    }
+  ]
+}
