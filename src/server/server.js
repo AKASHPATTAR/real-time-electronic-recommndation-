@@ -4,22 +4,29 @@ import priceComparisonRoutes from './priceComparisonApi.js';
 
 const app = express();
 const port = process.env.PORT || 5000;
+const host = '0.0.0.0'; // Listen on all network interfaces
 
-
-app.use(cors());
-
+// Configure CORS for both development and production
+app.use(cors({
+  origin: [
+    'http://localhost:5173',
+    'http://localhost:5174',
+    'https://akash-pattar-real-time-electronic.onrender.com',
+    /\.onrender\.com$/, // Allow all subdomains on render.com
+    /\.vercel\.app$/ // Allow all subdomains on vercel.app
+  ],
+  credentials: true
+}));
 
 app.use(express.json());
 
-// Log all 
+// Log all requests
 app.use((req, res, next) => {
   console.log(`${req.method} ${req.url}`);
   next();
 });
 
-
 app.use('/', priceComparisonRoutes);
-
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
@@ -31,7 +38,8 @@ app.use((err, req, res, next) => {
   res.status(500).json({ error: 'Internal server error' });
 });
 
-
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
+// Start server
+app.listen(port, host, () => {
+  console.log(`Server running on http://${host}:${port}`);
+  console.log('Environment:', process.env.NODE_ENV || 'development');
 });
